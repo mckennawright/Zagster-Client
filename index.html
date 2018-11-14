@@ -45,6 +45,30 @@ body, html {
 <header class="bgimg w3-display-container w3-grayscale-min" id="home">
   <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
     <span class="w3-tag">ZAGSTER DATA HERE</span>
+  <var data = [
+    {x: "A", value: 637166},
+    {x: "B", value: 721630},
+    {x: "C", value: 148662},
+    {x: "D", value: 78662},
+    {x: "E", value: 90000}
+  ];
+
+  // create a pie chart and set the data
+  var chart = anychart.pie(data);
+
+  /* set the inner radius
+  (to turn the pie chart into a doughnut chart)*/
+  chart.innerRadius("30%");
+
+  // set the chart title
+  chart.title("Doughnut Chart: Basic Sample");
+
+  // set the container id
+  chart.container("container");
+
+  // initiate drawing the chart
+  chart.draw();
+});></var>
   </div>
   <div class="w3-display-middle w3-center">
     <span class="w3-text-white" style="font-size:90px">The<br>Zagster Project</span>
