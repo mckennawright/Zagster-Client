@@ -46,38 +46,27 @@ body {
   <h2>ZAGSTER DATA 2017-2018</h2>
   <p>Data expoloration of bike use depending on month of year.</p>
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.container {
-    position: relative;
-    font-family: Arial;
-}
+  <anychart.onDocumentReady(function () {
 
-.text-block {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    background-color: black;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-</style>
-</head>
-<body>
+    // data set
+    var data = [
+        {x: "Winter", value: 10},
+        {x: "Spring", value: 12},
+        {x: "Summer", value: 18},
+        {x: "Fall", value: 11},
+    ];
 
-<h2>Zagster Data Visualization</h2>
-<p>How to place text blocks over an image:</p>
+    // create and configure a pie chart
+    var chart1 = anychart.pie(data);
+    chart1.innerRadius("75%");
 
-<div class="container">
-  <img src="http://www.wvxu.org/post/blue-ash-debuts-bike-share-program#stream/0" alt="Nature" style="width:100%;">
-  <div class="text-block">
-    <h4>Zagster</h4>
-    <p>Bike Share of Bend, Oregon</p>
-  </div>
-</div>
+    // create a bar chart
+    var chart2 = anychart.bar(data);
 
-</body>
-</html>
+    // set bar chart as the center content of a pie chart
+    chart1.center().content(chart2);
 
-
+    chart1.title("Donut Chart: Chart in the center");
+    chart1.container("container");
+    chart1.draw();
+});></anychart.onDocumentReady>
