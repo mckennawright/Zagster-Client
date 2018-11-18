@@ -1,6 +1,7 @@
 const BASE_URL = "https://zagster-service.herokuapp.com"
 
 $(updateView)
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
 
 function updateView() {
   $.getJSON(BASE_URL + "/rides/count" , updateRideCount)
