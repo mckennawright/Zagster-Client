@@ -50,12 +50,11 @@ body {
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
   <canvas id="doughnut" width="400" height="300"></canvas>
 <script>
-var ctx = document.getElementById("myChart");
-myDoughnutChart = new Chart(ctx, {
+var ctx = document.getElementById("doughnut");
+var myDoughnutChart = new Chart(ctx, {
     type: 'doughnut',
     data: data,
     options: options
-    data: {
         labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
         datasets: [{
             label: '# of Rides per month',
