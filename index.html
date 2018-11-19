@@ -49,7 +49,10 @@ body {
   <script>
   var ctx = document.getElementById("myChart").getContext('2d');
   var myChart = new Chart(ctx, {
-      type: 'bar',
+    var myDoughnutChart = new Chart(ctx, {
+    type: 'doughnut',
+    data: data,
+    options: option
       data: {
           labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
           datasets: [{
