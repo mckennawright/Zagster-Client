@@ -57,7 +57,7 @@ body {
 var ctx = document.getElementById("doughnut");
 var myDoughnutChart = new Chart(ctx, {
       type: 'doughnut',
-      data: data 
+      data: { 
           labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
           datasets: [{
               label: 'Rides per Month',
