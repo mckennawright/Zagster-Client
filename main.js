@@ -1,18 +1,21 @@
-onst BASE_URL = "https://zagster-service.herokuapp.com"
+const BASE_URL = "https://zagster-service.herokuapp.com"
 
-$(updateView)
+$(updateView) 
+
 
 function updateView() {
     $.getJSON(BASE_URL + "/rides/count", updateRideCount)
     $.getJSON(BASE_URL + "/rides/count/per_month", updatePerMonth)
 
 }
+console.log 
 
 function updateRideCount(data) {
     numberOfRides = data.count
     $("h2#rideCount").html(numberOfRides)
      console.log(data)
 }
+
 
 function updatePerMonth(data) {
     console.log(data[2016][0])
@@ -30,6 +33,6 @@ function updatePerMonth(data) {
                 data: [data[2016][0][9],data[2016][1][10],data[2016][2][11]],
             }]
         },
-        options: {}
+        options: {}7
     });
 }
