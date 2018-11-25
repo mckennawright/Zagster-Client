@@ -56,12 +56,11 @@ body {
 
 <script>
  var ctx = document.getElementById("myChart")
- var myChart = new Chart(ctx, {
-              
+ var myChart = new Chart(ctx, {        
   type: 'bar',
   data: {
   labels: ["January", "Feburary", "March", "April", "May", "June", "July", "August", "September", "October", "Novemeber", "December"]
- datasets: [{
+  datasets: [{
 label: 'Total Rides Per Month',
  data: [2294, 1016, 2414, 400, 1625, 2813, 4018,  492, 000, 334, 324, 342, 55],
 backgroundColor: [
