@@ -8,7 +8,18 @@ function updateView(){
 }
 
 function printData(data) {
-    [{"Jan":20},{"Feb":31},{"Mar":79},{"Apr":88},{"May":156},{"Jun":301},{"July":405},{"Aug":187},{"Sept":401},{"Oct":353},{"Nov":113},{"Dec":79}]
+    [{"January":20},
+    {"Febuary":31},
+    {"March":79},
+    {"April":88},
+    {"May":156},
+    {"June":301},
+    {"July":405},
+    {"August":187},
+    {"September":401},
+    {"October":353},
+    {"November":113},
+    {"December":79}]
 }
 
 function updateRideCount(data) {
