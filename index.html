@@ -109,7 +109,6 @@ body, html {
   </div>
 </div>
 
-
 </body>
 </html>
 
@@ -121,67 +120,45 @@ body, html {
     <main role="main" class="inner cover">
       <h2 class="cover-heading">Zagster Data Rides Per Month!</h2>
       <br>
-
-      <canvas id="myChart"></canvas>
+     
+      <body>
+      <canvas id="myChart" width="400" height="400"></canvas>
       <script>
-      var ctx = document.getElementById("myChart").getContext('2d');
-      var myChart = new Chart(ctx, {
-          type: 'bar',
-          data: {
-              labels: ["January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-              datasets: [{
-                  label: 'Zagster Rides Per Month',
-                  data: chartData,
-                  backgroundColor: [
-                      'rgba(255, 99, 132, 0.2)',
-                      'rgba(54, 162, 235, 0.2)',
-                      'rgba(255, 206, 86, 0.2)',
-                      'rgba(75, 192, 192, 0.2)',
-                      'rgba(153, 102, 255, 0.2)',
-                      'rgba(255, 159, 64, 0.2)',
-                      'rgba(255, 132, 75, 0.2',
-                      'rgba(67, 101, 34, 0.2)',
-                      'rgba(119, 111, 78, 0.2)',
-                      'rgba(201, 22, 121, 0.2',
-                      'rgba(69, 156, 46, 0.2)',
-                      'rgba(134, 101, 98, 0.2)'
-                      
-                      
-                  ],
-                  borderColor: [
-                      'rgba(255,99,132,1)',
-                      'rgba(54, 162, 235, 1)',
-                      'rgba(255, 206, 86, 1)',
-                      'rgba(75, 192, 192, 1)',
-                      'rgba(153, 102, 255, 1)',
-                      'rgba(255, 159, 64, 1)',
-                      'rgba(255, 132, 75, 1)',
-                      'rgba(67, 101, 34, 1)',
-                      'rgba(119, 111, 78, 1)',
-                      'rgba(201, 22, 95, 1)',
-                      'rgba(69, 156, 46, 1)',
-                      'rgba(134, 101, 98, 1)'
-                      
-                  ],
-                  borderWidth: 1
-              }]
-          },
-          options: {
-              scales: {
-                  yAxes: [{
-                      ticks: {
-                          beginAtZero:true
-                      }
-                  }]
-              }
-          }
-      });
-      </script>
-          
-
-<div class="footer">
-    <h2>Links and More Information about Zagster here!</h2>
-  </div>
-  </body>
-  </html>
-  
+        var ctx = document.getElementById("myChart");
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3, 5, 2, 3],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255,99,132,1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero:true
+                        }
+                    }]
+                }
+            }
+        });
+        </script>
