@@ -12,5 +12,5 @@ function getData(data){
  rideData = data;
 console.log(rideData);
 
- for (var i = 0; i <=11; ++i){
+ for (var i = 0; i <=12; ++i){
     chartData.push(rideData[2017] [i] [i+1]); 
