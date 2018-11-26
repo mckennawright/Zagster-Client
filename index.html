@@ -125,10 +125,11 @@ var ctx = document.getElementById("horizontalBar").getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'horizontalBar',
     data: {
-        labels: ["January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
         datasets: [{
             label: '# of Rides in 2017',
             data: [20,31,79,88,156,301,405,187,401,353,113,79],
+            backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
                 'rgba(255, 206, 86, 0.2)',
@@ -170,3 +171,4 @@ var myChart = new Chart(ctx, {
     }
 });
 </script>
+    
