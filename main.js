@@ -1,17 +1,17 @@
 const BASE_URL = "https://zagster-service.herokuapp.com"
-var chartData = []
-var rideData = []
-$(updateView) 
 
+$(updateView)
 
-function updateView() {
-    $.getJSON(BASE_URL + "/rides/count", updateRideCount)
-    $.getJSON(BASE_URL + "/rides/count/per_month", updatePerMonth)
+function updateView(){
+   $.getJSON(BASE_URL + "/rides/count", updateRideCount)
+   $.getJSON(BASE_URL + "/rides/count/per_month", printData)
 }
-function getData(data) {
-    rideData = data;
-    console.log(rideData);
-} 
-for ( var i = [0]; i <= [11]; ++i){
-chartData.push(rideData[2017] [i] [i+1]);
+
+function printData(data) {
+    [{"Jan":20},{"Feb":31},{"Mar":79},{"Apr":88},{"May":156},{"Jun":301},{"July":405},{"Aug":187},{"Sept":401},{"Oct":353},{"Nov":113},{"Dec":79}]
+}
+
+function updateRideCount(data) {
+    numberOfRides = data.count
+    $("h2#rideCount").html(numberOfRides)
 }
