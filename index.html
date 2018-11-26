@@ -117,13 +117,13 @@ body, html {
   <p>Data expoloration of Zagster Bike use depending on month of year, 2017 in Bend Oregon.</p>
 
  
-  <canvas id="myChart" width="200" height="200"></canvas>
+  <canvas id="horizontalBar" width="200" height="200"></canvas>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 
 <script>
-var ctx = document.getElementById("myChart").getContext('2d');
+var ctx = document.getElementById("horizontalBar").getContext('2d');
 var myChart = new Chart(ctx, {
-    type: 'bar',
+    type: 'horizontalBar',
     data: {
         labels: ["January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
         datasets: [{
