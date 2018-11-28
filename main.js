@@ -38,13 +38,13 @@ function updateRideCount(data) {
 
 function displayChart() {
     var ctx = document.getElementById("horizontalBar").getContext('2d');
-var myChart = new Chart(ctx, {
+    var myChart = new Chart(ctx, {
     type: 'horizontalBar',
     data: {
         labels: ["January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
         datasets: [{
             label: 'Number of Rides Per Month',
-            data: chartData
+            data: chartData,
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
