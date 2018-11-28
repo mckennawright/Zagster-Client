@@ -31,10 +31,6 @@ function updateRideCount(data) {
         console.log(data['2017'][0]['1']);
         console.log(chartData);
 
-        // for (var i = 0; i <=11; ++i){
-//     chartData.push(rideData[2017] [i] [i+1]);
-// }
-
         function updateRideCount(data) {
             $("h2#count").html(data.count);
             $("h2#count").css('visibility', 'visible')
