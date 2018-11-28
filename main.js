@@ -9,10 +9,11 @@ function updateView() {
     $.when ($.getJSON(BASE_URL + "/rides/count/per_month" , prepareCountsPerMonth),
     ).then
     (displayChart);
-
-function updateRideCount(data) {
-    $("h#2count").html(data.count)
-    $("h2#rideCount").html(numberOfRides)
+    
+    function updateRideCount(data) {
+        $("h2#count").html(data.count);
+        $("h2#count").css('visibility', 'visible')
+    }
 
     function prepareCountsPerMonth(data) {
         chartData.push(data['2017'][0]['1']);
