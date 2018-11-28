@@ -30,6 +30,10 @@ function updateRideCount(data) {
        
         console.log(data['2017'][0]['1']);
         console.log(chartData);
+
+        function updateRideCount(data) {
+            $("h2#count").html(data.count);
+            $("h2#count").css('visibility', 'visible')
 }
 
 function displayChart() {
