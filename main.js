@@ -11,7 +11,7 @@ function updateView() {
     (displayChart);
 
 function updateRideCount(data) {
-    numberOfRides = data.count
+    $("h#2count").html(data.count)
     $("h2#rideCount").html(numberOfRides)
 
     function prepareCountsPerMonth(data) {
@@ -47,7 +47,7 @@ var myChart = new Chart(ctx, {
     data: {
         labels: ["January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
         datasets: [{
-            label: '# of Rides in 2017',
+            label: 'Number of Rides Per Month',
             data: chartData
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
