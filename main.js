@@ -12,7 +12,7 @@ function updateView() {
     
     function updateRideCount(data) {
         $("h2#count").html(data.count);
-        $("h2#count").css('visibility', 'visible')
+    
     }
 
     function prepareCountsPerMonth(data) {
