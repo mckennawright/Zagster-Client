@@ -31,3 +31,5 @@ function updateRideCount(data) {
         console.log(data['2017'][0]['1']);
         console.log(chartData);
 }
+
+function displayChart() {
